@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "DemoOneViewController.h"
 
 @interface TableViewController ()
 
@@ -22,6 +23,7 @@ static NSString * const TableViewControllerCellReuseIdentifier = @"CellReuseIden
   [super viewDidLoad];
   self.title = @"Demo";
   self.demos = @[
+                 @"Fetch keyboard notification user info",
                  @"Text field on single view",
                  @"Text field on scroll view",
                  @"Text field on table view cell",
@@ -35,6 +37,13 @@ static NSString * const TableViewControllerCellReuseIdentifier = @"CellReuseIden
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  NSUInteger row = indexPath.row;
+  if (row == 0) {
+    DemoOneViewController *demoOneViewController = [[DemoOneViewController alloc] initWithNibName:@"DemoOneViewController" bundle:nil];
+    [self.navigationController pushViewController:demoOneViewController animated:YES];
+  }
+  
+
   [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

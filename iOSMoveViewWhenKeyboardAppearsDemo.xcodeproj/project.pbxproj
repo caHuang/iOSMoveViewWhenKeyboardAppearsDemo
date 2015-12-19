@@ -12,6 +12,8 @@
 		F01CE8421C23F323005B1849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01CE8411C23F323005B1849 /* Assets.xcassets */; };
 		F01CE8451C23F323005B1849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01CE8431C23F323005B1849 /* LaunchScreen.storyboard */; };
 		F097D4041C23F4C500BA1DAC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F097D4031C23F4C500BA1DAC /* TableViewController.m */; };
+		F097D4171C25634800BA1DAC /* DemoOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F097D4151C25634800BA1DAC /* DemoOneViewController.m */; };
+		F097D4181C25634800BA1DAC /* DemoOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F097D4161C25634800BA1DAC /* DemoOneViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		F01CE8461C23F323005B1849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F097D4021C23F4C500BA1DAC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		F097D4031C23F4C500BA1DAC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		F097D4141C25634800BA1DAC /* DemoOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoOneViewController.h; sourceTree = "<group>"; };
+		F097D4151C25634800BA1DAC /* DemoOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoOneViewController.m; sourceTree = "<group>"; };
+		F097D4161C25634800BA1DAC /* DemoOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoOneViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,9 @@
 				F01CE83F1C23F323005B1849 /* AppDelegate.m */,
 				F097D4021C23F4C500BA1DAC /* TableViewController.h */,
 				F097D4031C23F4C500BA1DAC /* TableViewController.m */,
+				F097D4141C25634800BA1DAC /* DemoOneViewController.h */,
+				F097D4151C25634800BA1DAC /* DemoOneViewController.m */,
+				F097D4161C25634800BA1DAC /* DemoOneViewController.xib */,
 				F01CE8411C23F323005B1849 /* Assets.xcassets */,
 				F01CE8431C23F323005B1849 /* LaunchScreen.storyboard */,
 				F01CE8461C23F323005B1849 /* Info.plist */,
@@ -133,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F097D4181C25634800BA1DAC /* DemoOneViewController.xib in Resources */,
 				F01CE8421C23F323005B1849 /* Assets.xcassets in Resources */,
 				F01CE8451C23F323005B1849 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -145,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F097D4171C25634800BA1DAC /* DemoOneViewController.m in Sources */,
 				F01CE8401C23F323005B1849 /* AppDelegate.m in Sources */,
 				F097D4041C23F4C500BA1DAC /* TableViewController.m in Sources */,
 				F01CE83D1C23F323005B1849 /* main.m in Sources */,
