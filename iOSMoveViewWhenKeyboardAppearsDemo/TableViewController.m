@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "DemoOneViewController.h"
+#import "DemoTwoViewController.h"
 
 @interface TableViewController ()
 
@@ -41,6 +42,9 @@ static NSString * const TableViewControllerCellReuseIdentifier = @"CellReuseIden
   if (row == 0) {
     DemoOneViewController *demoOneViewController = [[DemoOneViewController alloc] initWithNibName:@"DemoOneViewController" bundle:nil];
     [self.navigationController pushViewController:demoOneViewController animated:YES];
+  } else if (row == 1) {
+    DemoTwoViewController *demoTwoViewController = [[DemoTwoViewController alloc] initWithNibName:@"DemoTwoViewController" bundle:nil];
+    [self.navigationController pushViewController:demoTwoViewController animated:YES];
   }
   
 

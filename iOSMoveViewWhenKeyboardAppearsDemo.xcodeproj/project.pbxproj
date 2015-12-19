@@ -11,6 +11,8 @@
 		F01CE8401C23F323005B1849 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CE83F1C23F323005B1849 /* AppDelegate.m */; };
 		F01CE8421C23F323005B1849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01CE8411C23F323005B1849 /* Assets.xcassets */; };
 		F01CE8451C23F323005B1849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01CE8431C23F323005B1849 /* LaunchScreen.storyboard */; };
+		F08E5B7F1C25805E00567D2B /* DemoTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08E5B7D1C25805E00567D2B /* DemoTwoViewController.m */; };
+		F08E5B801C25805E00567D2B /* DemoTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08E5B7E1C25805E00567D2B /* DemoTwoViewController.xib */; };
 		F097D4041C23F4C500BA1DAC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F097D4031C23F4C500BA1DAC /* TableViewController.m */; };
 		F097D4171C25634800BA1DAC /* DemoOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F097D4151C25634800BA1DAC /* DemoOneViewController.m */; };
 		F097D4181C25634800BA1DAC /* DemoOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F097D4161C25634800BA1DAC /* DemoOneViewController.xib */; };
@@ -24,6 +26,9 @@
 		F01CE8411C23F323005B1849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F01CE8441C23F323005B1849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F01CE8461C23F323005B1849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F08E5B7C1C25805E00567D2B /* DemoTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTwoViewController.h; sourceTree = "<group>"; };
+		F08E5B7D1C25805E00567D2B /* DemoTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTwoViewController.m; sourceTree = "<group>"; };
+		F08E5B7E1C25805E00567D2B /* DemoTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTwoViewController.xib; sourceTree = "<group>"; };
 		F097D4021C23F4C500BA1DAC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		F097D4031C23F4C500BA1DAC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		F097D4141C25634800BA1DAC /* DemoOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoOneViewController.h; sourceTree = "<group>"; };
@@ -68,6 +73,9 @@
 				F097D4141C25634800BA1DAC /* DemoOneViewController.h */,
 				F097D4151C25634800BA1DAC /* DemoOneViewController.m */,
 				F097D4161C25634800BA1DAC /* DemoOneViewController.xib */,
+				F08E5B7C1C25805E00567D2B /* DemoTwoViewController.h */,
+				F08E5B7D1C25805E00567D2B /* DemoTwoViewController.m */,
+				F08E5B7E1C25805E00567D2B /* DemoTwoViewController.xib */,
 				F01CE8411C23F323005B1849 /* Assets.xcassets */,
 				F01CE8431C23F323005B1849 /* LaunchScreen.storyboard */,
 				F01CE8461C23F323005B1849 /* Info.plist */,
@@ -141,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08E5B801C25805E00567D2B /* DemoTwoViewController.xib in Resources */,
 				F097D4181C25634800BA1DAC /* DemoOneViewController.xib in Resources */,
 				F01CE8421C23F323005B1849 /* Assets.xcassets in Resources */,
 				F01CE8451C23F323005B1849 /* LaunchScreen.storyboard in Resources */,
@@ -154,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08E5B7F1C25805E00567D2B /* DemoTwoViewController.m in Sources */,
 				F097D4171C25634800BA1DAC /* DemoOneViewController.m in Sources */,
 				F01CE8401C23F323005B1849 /* AppDelegate.m in Sources */,
 				F097D4041C23F4C500BA1DAC /* TableViewController.m in Sources */,
@@ -259,11 +269,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSMoveViewWhenKeyboardAppearsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lab.iOSMoveViewWhenKeyboardAppearsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -271,11 +284,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSMoveViewWhenKeyboardAppearsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lab.iOSMoveViewWhenKeyboardAppearsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
