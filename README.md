@@ -7,7 +7,7 @@ Device: iPhone 6
 Demo
 ----
 - [x] Fetch keyboard notification user info
-- [ ] Text field on single view
+- [x] Text field on single view
 - [ ] Text field on scroll view
 - [ ] Text field on table view cell
 - [ ] Text view on single view
