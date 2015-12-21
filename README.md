@@ -1,6 +1,6 @@
 # iOS Move View When Keyboard Appears Demo
 
-This is the demo project used in this blog post
+This is the demo project used in [this blog post](https://medium.com/@yolk/ios-推鍵盤的大小事-1-90c482396f7d)
 
 Device: iPhone 6
 
